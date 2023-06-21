@@ -21,7 +21,9 @@
     "@oclif/core": "^2.8.7",
     "@oclif/plugin-help": "^5.2.10",
     "@oclif/plugin-plugins": "^2.4.7",
+    "common-tags": "^1.8.2",
     "compose-regexp": "^0.7.1",
+    "langchain": "^0.0.96",
     "reflect-metadata": "^0.1.13",
     "ts-results-es": "^3.6.0",
     "tsyringe": "^4.8.0",
@@ -31,6 +33,7 @@
   "devDependencies": {
     "@oclif/test": "^2.3.23",
     "@types/chai": "^4.3.5",
+    "@types/common-tags": "^1.8.1",
     "@types/mocha": "^9.1.1",
     "@types/node": "^16.18.36",
     "chai": "^4.3.7",
