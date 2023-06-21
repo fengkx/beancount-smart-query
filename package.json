@@ -18,8 +18,8 @@
     "/oclif.manifest.json"
   ],
   "dependencies": {
-    "@oclif/core": "^2",
-    "@oclif/plugin-help": "^5",
+    "@oclif/core": "^2.8.7",
+    "@oclif/plugin-help": "^5.2.10",
     "@oclif/plugin-plugins": "^2.4.7",
     "compose-regexp": "^0.7.1",
     "reflect-metadata": "^0.1.13",
@@ -29,17 +29,17 @@
     "zx": "^7.2.2"
   },
   "devDependencies": {
-    "@oclif/test": "^2.3.22",
-    "@types/chai": "^4",
-    "@types/mocha": "^9.0.0",
+    "@oclif/test": "^2.3.23",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^9.1.1",
     "@types/node": "^16.18.36",
-    "chai": "^4",
+    "chai": "^4.3.7",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
     "eslint-config-oclif-typescript": "^1.0.3",
-    "mocha": "^9",
-    "oclif": "^3.0.0",
-    "shx": "^0.3.3",
+    "mocha": "^9.2.2",
+    "oclif": "^3.9.1",
+    "shx": "^0.3.4",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.3",
     "typescript": "^4.9.5"
@@ -75,5 +75,11 @@
   "keywords": [
     "oclif"
   ],
+  "pnpm": {
+    "overrides": {
+      "@typescript-eslint/eslint-plugin": "latest",
+      "@typescript-eslint/parser": "latest"
+    }
+  },
   "types": "dist/index.d.ts"
 }

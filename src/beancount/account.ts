@@ -15,6 +15,7 @@ const START_WITH_ACCOUNT_TYPE_RE = sequence(/^/, atomic(either(...ACCOUNT_TYPES)
 export class BeanAccount {
   constructor(public beanQuery?: BeanQuery) {}
 
+  // eslint-disable-next-line unicorn/consistent-function-scoping
   static castBeanAccountName = make<BeanAccountName>((name: string) => {
     if (!BeanAccount.isValidateAccountName(name)) {
       throw new Error('not a valid beancount account name')
