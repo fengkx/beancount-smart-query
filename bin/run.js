@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import 'reflect-metadata'
 
 import oclif from '@oclif/core'
 

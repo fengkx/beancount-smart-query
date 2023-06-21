@@ -20,7 +20,13 @@
   "dependencies": {
     "@oclif/core": "^2",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.4.7"
+    "@oclif/plugin-plugins": "^2.4.7",
+    "compose-regexp": "^0.7.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-results-es": "^3.6.0",
+    "tsyringe": "^4.8.0",
+    "type-brandy": "^1.0.2",
+    "zx": "^7.2.2"
   },
   "devDependencies": {
     "@oclif/test": "^2.3.22",

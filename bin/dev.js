@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node
 
 /* eslint-disable node/shebang */
-
+import 'reflect-metadata'
 import oclif from '@oclif/core'
 import path from 'node:path'
 import url from 'node:url'

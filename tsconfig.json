@@ -2,12 +2,16 @@
   "compilerOptions": {
     "declaration": true,
     "importHelpers": true,
-    "module": "ES2020",
+    "module": "ES2022",
     "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
-    "target": "es2019"
+    "target": "es2019",
+    // needed by tsyringe
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "ts-node": {
     "esm": true
