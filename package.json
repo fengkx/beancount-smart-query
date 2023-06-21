@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "beancount smart query",
   "author": "fengkx",
+  "type": "module",
   "bin": {
-    "bean-sq": "./bin/run"
+    "bean-sq": "./bin/run.js"
   },
   "homepage": "https://github.com/fengkx/beancount-smart-query",
   "license": "MIT",
