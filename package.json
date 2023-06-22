@@ -1,7 +1,7 @@
 {
   "name": "beancount-smart-query",
   "version": "0.0.0",
-  "description": "beancount smart query",
+  "description": "Query beancount in human language with the help of AI",
   "author": "fengkx",
   "type": "module",
   "packageManager": "pnpm@8.6.3",

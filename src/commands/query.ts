@@ -4,14 +4,12 @@ import {beanEntryPathToken, cliOptionsToken, commandToken, openAIKeyToken} from 
 import {AIQueryBuilder} from '../chains/sql.js'
 
 export default class Query extends Command {
-  static description = 'describe the command here'
+  static description = 'Query beancount in human language with the help of AI'
 
-  static examples = [
-    "<%= config.bin %> <%= command.id %> main.bean 'List all my traffic cost in last month'",
-  ]
+  static examples = ['List all my traffic cost in last month', '列出近一周 CMB 银行卡的账单 按时间先后顺序输出', '上个月花了多少钱在娱乐上'].map(query => `<%= config.bin %> <%= command.id %> main.bean '${query}' ${Math.random() > 0.6 ? '--verbose' : ''} ${Math.random() > 0.8 ? '--learning' : ''}`)
 
   static flags = {
-    learning: Flags.boolean({description: 'AI will teaching you how to query'}),
+    learning: Flags.boolean({description: 'whether AI will teaching you how to query'}),
     verbose: Flags.boolean({char: 'v', default: false, description: 'detail log'}),
   }
 
