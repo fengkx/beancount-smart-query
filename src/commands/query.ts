@@ -7,11 +7,10 @@ export default class Query extends Command {
   static description = 'describe the command here'
 
   static examples = [
-    '<%= config.bin %> <%= command.id %>',
+    "<%= config.bin %> <%= command.id %> main.bean 'List all my traffic cost in last month'",
   ]
 
   static flags = {
-    // flag with a value (-n, --name=VALUE)
     learning: Flags.boolean({description: 'AI will teaching you how to query'}),
     verbose: Flags.boolean({char: 'v', default: false, description: 'detail log'}),
   }
