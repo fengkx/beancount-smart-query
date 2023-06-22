@@ -8,7 +8,6 @@ import {codeBlock, oneLine} from 'common-tags'
 import {BQL_COLUMNS, BQL_FUNCTIONS, BQL_SYNTAX} from './prompts/bql.js'
 import {cliOptionsToken, openAIKeyToken} from '../ioc/tokens.js'
 import {ChatOpenAI} from 'langchain/chat_models/openai'
-import {OpenAI} from 'langchain/llms/openai'
 import {createChatOpenAI, createOpenAI} from './utils/openai.js'
 
 /**

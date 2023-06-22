@@ -1,6 +1,5 @@
 import {ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, AIMessagePromptTemplate} from 'langchain/prompts'
 import {LLMChain} from 'langchain/chains'
-import {ChatOpenAI} from 'langchain/chat_models/openai'
 import {codeBlock, oneLineCommaLists, oneLine} from 'common-tags'
 import {autoInjectable, inject, injectable} from 'tsyringe'
 import {BeanAccount} from '../beancount/account.js'
