@@ -1,7 +1,7 @@
 import {DynamicTool} from 'langchain/tools'
 import {initializeAgentExecutorWithOptions} from 'langchain/agents'
 
-import {BeanQuery, BeanQueryOptions} from '../beancount/query.js'
+import {BeanQuery} from '../beancount/query.js'
 import {autoInjectable, inject} from 'tsyringe'
 import {codeBlock, oneLine} from 'common-tags'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -9,6 +9,7 @@ import {BQL_COLUMNS, BQL_FUNCTIONS, BQL_SYNTAX} from './prompts/bql.js'
 import {cliOptionsToken, openAIKeyToken} from '../ioc/tokens.js'
 import {ChatOpenAI} from 'langchain/chat_models/openai'
 import {createChatOpenAI, createOpenAI} from './utils/openai.js'
+import {CLIOptions} from '../commands/query.js'
 
 /**
  * 尝试修正 BQL
@@ -18,7 +19,7 @@ export class BQLSyntaxCorrecter {
   private tools: DynamicTool[] = []
   private model: ChatOpenAI
 
-  constructor(private beanQuery?: BeanQuery, @inject(openAIKeyToken) openAIApiKey?: string, @inject(cliOptionsToken) private options?: BeanQueryOptions) {
+  constructor(private beanQuery?: BeanQuery, @inject(openAIKeyToken) openAIApiKey?: string, @inject(cliOptionsToken) private options?: CLIOptions) {
     this.model = createChatOpenAI({temperature: 0, openAIApiKey})
     this.tools = [
       new DynamicTool({

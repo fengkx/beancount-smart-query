@@ -3,7 +3,7 @@ import {LLMChain} from 'langchain/chains'
 import {codeBlock, oneLineCommaLists, oneLine} from 'common-tags'
 import {autoInjectable, inject, injectable} from 'tsyringe'
 import {BeanAccount} from '../beancount/account.js'
-import {BeanQuery, BeanQueryOptions} from '../beancount/query.js'
+import {BeanQuery} from '../beancount/query.js'
 import {Err, Ok, Result} from 'ts-results-es'
 import {BufferWindowMemory} from 'langchain/memory'
 
@@ -12,11 +12,12 @@ import {BQL_COLUMNS, BQL_FUNCTIONS, BQL_SYNTAX} from './prompts/bql.js'
 import {BQLSyntaxCorrecter} from './correct-bql.js'
 import {Command} from '@oclif/core'
 import {createChatOpenAI} from './utils/openai.js'
+import {CLIOptions} from '../commands/query.js'
 
 @injectable()
 @autoInjectable()
 export class AIQueryBuilder  {
-  constructor(private account?: BeanAccount,  @inject(cliOptionsToken) private options?: BeanQueryOptions, @inject(openAIKeyToken) private openaiKey?: string) {}
+  constructor(private account?: BeanAccount,  @inject(cliOptionsToken) private options?: CLIOptions, @inject(openAIKeyToken) private openaiKey?: string) {}
 
   private async createPrompt() {
     const accountNames = (await this.account!.getAllAccountName()).expect('Failed to get accounts')
@@ -111,7 +112,7 @@ export class AIQueryBuilder  {
 
 @autoInjectable()
 export class QueryResult {
-  constructor(private llmOutput: string, private userInput: string, private beanQuery?: BeanQuery, @inject(cliOptionsToken) private options?: BeanQueryOptions, @inject(commandToken) private cmd?: Command) {}
+  constructor(private llmOutput: string, private userInput: string, private beanQuery?: BeanQuery, @inject(cliOptionsToken) private options?: CLIOptions, @inject(commandToken) private cmd?: Command) {}
   private parseLLMOutput(): Result<string, Error> {
     const matches = this.llmOutput.match(/```\n([\S\s]*?)```/)
     if (!matches || !matches[1]) {

@@ -43,3 +43,8 @@ export default class Query extends Command {
     await result.output()
   }
 }
+
+export type CLIOptions = {
+  verbose: boolean;
+  learning: boolean
+}

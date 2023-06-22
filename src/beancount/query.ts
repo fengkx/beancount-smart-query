@@ -3,16 +3,12 @@ import {singleton, inject} from 'tsyringe'
 import {beanEntryPathToken, cliOptionsToken, commandToken} from '../ioc/tokens.js'
 import {Command} from '@oclif/core'
 import {Err, Ok, Result} from 'ts-results-es'
-
-export type BeanQueryOptions = {
-  verbose: boolean;
-  learning: boolean
-}
+import {CLIOptions} from '../commands/query.js'
 
 @singleton()
 export class BeanQuery {
   beanQueryPath: string | null = null;
-  constructor(@inject(beanEntryPathToken) private beanEntryPath: string, @inject(cliOptionsToken) options: BeanQueryOptions, @inject(commandToken) cmd: Command) {
+  constructor(@inject(beanEntryPathToken) private beanEntryPath: string, @inject(cliOptionsToken) options: CLIOptions, @inject(commandToken) cmd: Command) {
     try {
       this.beanQueryPath = which.sync('bean-query')
     } catch {
