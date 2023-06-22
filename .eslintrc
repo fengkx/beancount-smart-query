@@ -4,6 +4,10 @@
     "max-params": ["error", { "max": 6 }],
     "node/no-missing-import": "off",
     "no-useless-constructor": "off",
-    "new-cap": "off"
+    "new-cap": "off",
+    "unicorn/consistent-function-scoping": [
+      "error",
+      { "checkArrowFunctions": false }
+    ]
   }
 }
