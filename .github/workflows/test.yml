@@ -36,6 +36,8 @@ jobs:
         run: pnpm install
       - name: Install beancount
         run: sudo -H python3 -m pip install beancount
+      - name: OpenAI Key placeholder
+        run: echo 'OPENAI_API_KEY=sk-95123456abcd' >> .env
       - name: Run linter
         run: pnpm lint
       - name: Run Test
