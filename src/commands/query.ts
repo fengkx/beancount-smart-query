@@ -3,6 +3,7 @@ import {container, instanceCachingFactory} from 'tsyringe'
 import {Command, Flags, Args} from '@oclif/core'
 import {beanEntryPathToken, cliOptionsToken, commandToken, openAIKeyToken} from '../ioc/tokens.js'
 import {AIQueryBuilder} from '../chains/sql.js'
+import {fs} from 'zx'
 
 export default class Query extends Command {
   static description = 'Query beancount in human language with the help of AI'
@@ -22,7 +23,13 @@ export default class Query extends Command {
   public async run(): Promise<void> {
     const {args, flags} = await this.parse(Query)
     container.register(commandToken, {useValue: this})
-    container.register(beanEntryPathToken, {useValue: args.file})
+    container.register(beanEntryPathToken, {useFactory: instanceCachingFactory(() => {
+      if (!fs.existsSync(args.file)) {
+        throw new Error(`File: ${args.file} is not found`)
+      }
+
+      return args.file
+    })})
     container.register(cliOptionsToken, {useValue: {verbose: flags.verbose, learning: flags.learning}})
     container.register(openAIKeyToken, {useFactory: instanceCachingFactory(() => {
       if (typeof process.env.OPENAI_API_KEY !== 'string') {

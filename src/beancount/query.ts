@@ -1,4 +1,4 @@
-import {$, ProcessOutput, which} from 'zx'
+import {$, ProcessOutput, which, fs} from 'zx'
 import {singleton, inject} from 'tsyringe'
 import {beanEntryPathToken, cliOptionsToken, commandToken} from '../ioc/tokens.js'
 import {Command} from '@oclif/core'
@@ -17,6 +17,11 @@ export class BeanQuery {
       this.beanQueryPath = which.sync('bean-query')
     } catch {
       cmd.error('bean-query not found', {exit: 1})
+    }
+
+    if (!fs.existsSync(this.beanQueryPath)) {
+      console.log(this.beanEntryPath)
+      cmd.error('beancount entry file not found', {exit: 1})
     }
 
     if (!options.verbose) {

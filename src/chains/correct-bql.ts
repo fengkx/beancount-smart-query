@@ -9,6 +9,7 @@ import {BQL_COLUMNS, BQL_FUNCTIONS, BQL_SYNTAX} from './prompts/bql.js'
 import {cliOptionsToken, openAIKeyToken} from '../ioc/tokens.js'
 import {ChatOpenAI} from 'langchain/chat_models/openai'
 import {OpenAI} from 'langchain/llms/openai'
+import {createChatOpenAI, createOpenAI} from './utils/openai.js'
 
 /**
  * 尝试修正 BQL
@@ -19,7 +20,7 @@ export class BQLSyntaxCorrecter {
   private model: ChatOpenAI
 
   constructor(private beanQuery?: BeanQuery, @inject(openAIKeyToken) openAIApiKey?: string, @inject(cliOptionsToken) private options?: BeanQueryOptions) {
-    this.model = new ChatOpenAI({temperature: 0, openAIApiKey})
+    this.model = createChatOpenAI({temperature: 0, openAIApiKey})
     this.tools = [
       new DynamicTool({
         name: 'Exec Query',
@@ -43,7 +44,7 @@ export class BQLSyntaxCorrecter {
       //   `,
       // }),
       new DynamicTool({name: 'Common Error Explainer', description: 'Run this to give explain for common error message. input should be error message', func: async (errMsg:string) => {
-        const model = new OpenAI({temperature: 0, openAIApiKey})
+        const model = createOpenAI({temperature: 0, openAIApiKey})
         const resp = await model.call(codeBlock`
         Explain Common Errors
         Error: Invalid number of arguments for DateAdd: found 3 expected 2.

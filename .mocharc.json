@@ -1,6 +1,5 @@
 {
-  "node-option": ["loader=ts-node"],
-  "require": ["test/helpers/init.cjs", "ts-node/register"],
+  "loader": "ts-node/esm",
   "watch-extensions": ["ts"],
   "recursive": true,
   "reporter": "spec",

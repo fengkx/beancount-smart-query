@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "composite": true,
     "declaration": true,
     "importHelpers": true,
     "module": "ES2022",
@@ -16,7 +17,9 @@
     "emitDecoratorMetadata": true
   },
   "ts-node": {
-    "esm": true
+    "esm": true,
+    "files": true
   },
+  "files": ["tests/setup.d.ts"],
   "include": ["src/**/*"]
 }

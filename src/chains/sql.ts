@@ -12,6 +12,7 @@ import {cliOptionsToken, commandToken, openAIKeyToken} from '../ioc/tokens.js'
 import {BQL_COLUMNS, BQL_FUNCTIONS, BQL_SYNTAX} from './prompts/bql.js'
 import {BQLSyntaxCorrecter} from './correct-bql.js'
 import {Command} from '@oclif/core'
+import {createChatOpenAI} from './utils/openai.js'
 
 @injectable()
 @autoInjectable()
@@ -29,7 +30,7 @@ export class AIQueryBuilder  {
 
       ${BQL_FUNCTIONS}
 
-       Output Beancount query according to the user demand, Don't output anything other than the query itself
+       Output Beancount query according to the user demand, You should ALWAYS use the same language to response.
       `),
       HumanMessagePromptTemplate.fromTemplate(oneLine`List of Expenses for this Month`),
       AIMessagePromptTemplate.fromTemplate(codeBlock`
@@ -95,7 +96,7 @@ export class AIQueryBuilder  {
 
     const chain = new LLMChain({
       prompt: await this.createPrompt(),
-      llm: new ChatOpenAI({temperature: 0, openAIApiKey: this.openaiKey}),
+      llm: createChatOpenAI({temperature: 0, openAIApiKey: this.openaiKey}),
       verbose: this.options?.verbose,
       memory,
     })

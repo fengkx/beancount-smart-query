@@ -24,8 +24,10 @@
     "@oclif/plugin-help": "^5.2.10",
     "common-tags": "^1.8.2",
     "compose-regexp": "^0.7.1",
+    "defu": "^6.1.2",
     "dotenv": "^16.3.1",
     "langchain": "^0.0.96",
+    "proxy-agent": "^6.2.1",
     "reflect-metadata": "^0.1.13",
     "ts-results-es": "^3.6.0",
     "tsyringe": "^4.8.0",
@@ -43,6 +45,7 @@
     "eslint-config-oclif": "^4",
     "eslint-config-oclif-typescript": "^1.0.3",
     "mocha": "^9.2.2",
+    "mocha-chai-jest-snapshot": "^1.1.4",
     "oclif": "^3.9.1",
     "shx": "^0.3.4",
     "ts-node": "^10.9.1",
@@ -69,7 +72,7 @@
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "npm run lint",
     "prepack": "npm run build && oclif manifest && oclif readme",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "test": "mocha --forbid-only \"tests/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
   },
   "engines": {

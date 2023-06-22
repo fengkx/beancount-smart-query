@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`query should list all Foods expenses in last year 1`] = `
+"   date                      description                           account           position 
+---------- ----------------------------------------------- ------------------------ ----------
+2022-12-29 Goba Goba | Eating out alone                    Expenses:Food:Restaurant   7.66 USD
+2022-12-24 Kin Soy | Eating out with work buddies          Expenses:Food:Restaurant  23.00 USD
+2022-12-21 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries   76.72 USD
+2022-12-19 China Garden | Eating out with Julie            Expenses:Food:Restaurant  40.48 USD
+2022-12-17 Uncle Boons | Eating out with Bill              Expenses:Food:Restaurant  23.13 USD
+2022-12-16 Rose Flower | Eating out with Joe               Expenses:Food:Restaurant  20.51 USD
+2022-12-12 Goba Goba | Eating out after work               Expenses:Food:Restaurant  35.06 USD
+2022-12-09 China Garden | Eating out with work buddies     Expenses:Food:Restaurant  76.64 USD
+2022-12-08 Corner Deli | Buying groceries                  Expenses:Food:Groceries   65.55 USD
+2022-12-05 Cafe Modagor | Eating out with Julie            Expenses:Food:Restaurant  20.71 USD
+2022-12-03 Good Moods Market | Buying groceries            Expenses:Food:Groceries   86.97 USD
+2022-12-02 Goba Goba | Eating out with Bill                Expenses:Food:Restaurant  33.23 USD
+2022-11-30 Chichipotle | Eating out with work buddies      Expenses:Food:Restaurant  19.19 USD
+2022-11-29 Jewel of Morroco | Eating out with Joe          Expenses:Food:Restaurant  27.63 USD
+2022-11-27 Uncle Boons | Eating out                        Expenses:Food:Restaurant  29.08 USD
+2022-11-26 Rose Flower | Eating out with Bill              Expenses:Food:Restaurant  21.76 USD
+2022-11-21 Chichipotle | Eating out                        Expenses:Food:Restaurant  20.39 USD
+2022-11-20 Chichipotle | Eating out with Joe               Expenses:Food:Restaurant  26.41 USD
+2022-11-19 Jewel of Morroco | Eating out with Natasha      Expenses:Food:Restaurant  27.33 USD
+2022-11-18 Corner Deli | Buying groceries                  Expenses:Food:Groceries  113.47 USD
+2022-11-16 Uncle Boons | Eating out with Natasha           Expenses:Food:Restaurant  39.97 USD
+2022-11-11 Jewel of Morroco | Eating out with work buddies Expenses:Food:Restaurant  33.97 USD
+2022-11-10 Chichipotle | Eating out with Bill              Expenses:Food:Restaurant  57.64 USD
+2022-11-09 Goba Goba | Eating out with work buddies        Expenses:Food:Restaurant  49.71 USD
+2022-11-08 Corner Deli | Buying groceries                  Expenses:Food:Groceries   75.06 USD
+2022-11-07 China Garden | Eating out                       Expenses:Food:Restaurant  29.22 USD
+2022-11-05 China Garden | Eating out with Bill             Expenses:Food:Restaurant  51.67 USD
+2022-11-01 Rose Flower | Eating out with Bill              Expenses:Food:Restaurant  24.85 USD
+2022-10-29 Kin Soy | Eating out alone                      Expenses:Food:Restaurant  39.03 USD
+2022-10-26 Uncle Boons | Eating out with Natasha           Expenses:Food:Restaurant  46.79 USD
+2022-10-24 Kin Soy | Eating out with Natasha               Expenses:Food:Restaurant  35.87 USD
+2022-10-21 Corner Deli | Buying groceries                  Expenses:Food:Groceries   75.14 USD
+2022-10-19 Cafe Modagor | Eating out after work            Expenses:Food:Restaurant  20.43 USD
+2022-10-18 Kin Soy | Eating out with work buddies          Expenses:Food:Restaurant  49.51 USD
+2022-10-16 Uncle Boons | Eating out with work buddies      Expenses:Food:Restaurant  49.86 USD
+2022-10-15 Cafe Modagor | Eating out with work buddies     Expenses:Food:Restaurant  28.56 USD
+2022-10-12 China Garden | Eating out alone                 Expenses:Food:Restaurant  31.06 USD
+2022-10-11 Chichipotle | Eating out with Bill              Expenses:Food:Restaurant  25.12 USD
+2022-10-09 Good Moods Market | Buying groceries            Expenses:Food:Groceries   67.01 USD
+2022-10-07 Chichipotle | Eating out after work             Expenses:Food:Restaurant  27.91 USD
+2022-10-04 Rose Flower | Eating out with Joe               Expenses:Food:Restaurant  27.59 USD
+2022-10-03 Good Moods Market | Buying groceries            Expenses:Food:Groceries   78.38 USD
+2022-10-02 Kin Soy | Eating out with Julie                 Expenses:Food:Restaurant  46.90 USD
+2022-09-30 China Garden | Eating out alone                 Expenses:Food:Restaurant  19.27 USD
+2022-09-30 La Colombe                                      Expenses:Food:Coffee       4.49 USD
+2022-09-29 Cafe Select                                     Expenses:Food:Restaurant  30.56 USD
+2022-09-29 Laut                                            Expenses:Food:Restaurant  34.09 USD
+2022-09-29 La Colombe                                      Expenses:Food:Coffee       5.11 USD
+2022-09-29 Gimme! Coffee                                   Expenses:Food:Coffee      11.24 USD
+2022-09-28 Takahachi                                       Expenses:Food:Restaurant  53.64 USD
+2022-09-28 Gimme! Coffee                                   Expenses:Food:Coffee       8.87 USD
+2022-09-27 Laut                                            Expenses:Food:Restaurant  30.99 USD
+2022-09-27 La Colombe                                      Expenses:Food:Coffee       6.45 USD
+2022-09-26 Cafe Select                                     Expenses:Food:Restaurant  33.12 USD
+2022-09-26 Takahachi                                       Expenses:Food:Restaurant  53.78 USD
+2022-09-26 Laut                                            Expenses:Food:Restaurant  32.05 USD
+2022-09-26 La Colombe                                      Expenses:Food:Coffee       6.88 USD
+2022-09-25 Uncle Boons                                     Expenses:Food:Restaurant  40.78 USD
+2022-09-25 Laut                                            Expenses:Food:Restaurant  27.02 USD
+2022-09-24 La Colombe                                      Expenses:Food:Coffee       6.82 USD
+2022-09-23 Cafe Select                                     Expenses:Food:Restaurant  30.89 USD
+2022-09-23 Takahachi                                       Expenses:Food:Restaurant  43.61 USD
+2022-09-22 Takahachi                                       Expenses:Food:Restaurant  42.94 USD
+2022-09-20 Uncle Boons | Eating out with Joe               Expenses:Food:Restaurant  19.40 USD
+2022-09-17 Rose Flower | Eating out                        Expenses:Food:Restaurant  53.86 USD
+2022-09-16 Jewel of Morroco | Eating out with Julie        Expenses:Food:Restaurant  39.91 USD
+2022-09-14 Cafe Modagor | Eating out with Joe              Expenses:Food:Restaurant  26.61 USD
+2022-09-10 Corner Deli | Buying groceries                  Expenses:Food:Groceries  138.81 USD
+2022-09-09 Rose Flower | Eating out after work             Expenses:Food:Restaurant  74.18 USD
+2022-09-05 Chichipotle | Eating out                        Expenses:Food:Restaurant  41.57 USD
+2022-09-04 Cafe Modagor | Eating out with Joe              Expenses:Food:Restaurant  44.92 USD
+2022-09-02 Rose Flower | Eating out after work             Expenses:Food:Restaurant  56.12 USD
+2022-08-29 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries  123.27 USD
+2022-08-28 Kin Soy | Eating out                            Expenses:Food:Restaurant  35.00 USD
+2022-08-25 Uncle Boons | Eating out with Joe               Expenses:Food:Restaurant  62.71 USD
+2022-08-21 Onion Market | Buying groceries                 Expenses:Food:Groceries  130.85 USD
+2022-08-20 Rose Flower | Eating out with work buddies      Expenses:Food:Restaurant  33.79 USD
+2022-08-15 Rose Flower | Eating out with work buddies      Expenses:Food:Restaurant  24.29 USD
+2022-08-14 Rose Flower | Eating out                        Expenses:Food:Restaurant  43.19 USD
+2022-08-11 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries  100.08 USD
+2022-08-09 China Garden | Eating out alone                 Expenses:Food:Restaurant  20.87 USD
+2022-08-04 Rose Flower | Eating out after work             Expenses:Food:Restaurant  21.46 USD
+2022-08-01 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries   68.77 USD
+2022-07-30 China Garden | Eating out with Joe              Expenses:Food:Restaurant  23.53 USD
+2022-07-25 Goba Goba | Eating out with work buddies        Expenses:Food:Restaurant  12.77 USD
+2022-07-25 Corner Deli | Buying groceries                  Expenses:Food:Groceries   50.39 USD
+2022-07-24 Chichipotle | Eating out after work             Expenses:Food:Restaurant  21.12 USD
+2022-07-21 Goba Goba | Eating out with Natasha             Expenses:Food:Restaurant  21.26 USD
+2022-07-20 Rose Flower | Eating out with work buddies      Expenses:Food:Restaurant  54.15 USD
+2022-07-18 China Garden | Eating out with Joe              Expenses:Food:Restaurant  23.43 USD
+2022-07-15 China Garden | Eating out after work            Expenses:Food:Restaurant  21.01 USD
+2022-07-13 Rose Flower | Eating out with Bill              Expenses:Food:Restaurant  19.54 USD
+2022-07-12 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries   58.76 USD
+2022-07-11 Jewel of Morroco | Eating out with Bill         Expenses:Food:Restaurant  45.15 USD
+2022-07-08 China Garden | Eating out with Julie            Expenses:Food:Restaurant  60.56 USD
+2022-07-05 Uncle Boons | Eating out with Natasha           Expenses:Food:Restaurant  35.98 USD
+2022-07-04 Uncle Boons | Eating out                        Expenses:Food:Restaurant  24.40 USD
+2022-07-03 Onion Market | Buying groceries                 Expenses:Food:Groceries   82.28 USD
+2022-07-01 Kin Soy | Eating out with Bill                  Expenses:Food:Restaurant  20.99 USD
+2022-06-29 Jewel of Morroco | Eating out after work        Expenses:Food:Restaurant  41.02 USD
+2022-06-24 Cafe Modagor | Eating out with Bill             Expenses:Food:Restaurant  39.48 USD
+2022-06-21 Rose Flower | Eating out with Joe               Expenses:Food:Restaurant  16.30 USD
+2022-06-19 Jewel of Morroco | Eating out with Natasha      Expenses:Food:Restaurant  30.01 USD
+2022-06-14 Jewel of Morroco | Eating out with Julie        Expenses:Food:Restaurant  87.21 USD
+2022-06-13 Corner Deli | Buying groceries                  Expenses:Food:Groceries   77.17 USD
+2022-06-09 Rose Flower | Eating out after work             Expenses:Food:Restaurant  27.57 USD
+2022-06-08 Goba Goba | Eating out with Joe                 Expenses:Food:Restaurant  21.62 USD
+2022-06-05 Cafe Modagor | Eating out after work            Expenses:Food:Restaurant  65.88 USD
+2022-06-03 Cafe Modagor | Eating out with Natasha          Expenses:Food:Restaurant  16.87 USD
+2022-06-01 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries   90.99 USD
+2022-05-31 Goba Goba | Eating out                          Expenses:Food:Restaurant  26.55 USD
+2022-05-27 Kin Soy | Eating out with work buddies          Expenses:Food:Restaurant  34.35 USD
+2022-05-25 Onion Market | Buying groceries                 Expenses:Food:Groceries   86.73 USD
+2022-05-22 China Garden | Eating out with Joe              Expenses:Food:Restaurant  26.48 USD
+2022-05-19 Kin Soy | Eating out with Bill                  Expenses:Food:Restaurant  34.34 USD
+2022-05-16 Uncle Boons | Eating out with work buddies      Expenses:Food:Restaurant  34.10 USD
+2022-05-16 Corner Deli | Buying groceries                  Expenses:Food:Groceries   79.70 USD
+2022-05-14 Jewel of Morroco | Eating out with Natasha      Expenses:Food:Restaurant  27.63 USD
+2022-05-12 Uncle Boons | Eating out with Joe               Expenses:Food:Restaurant  19.74 USD
+2022-05-09 Kin Soy | Eating out with Joe                   Expenses:Food:Restaurant  23.74 USD
+2022-05-08 Good Moods Market | Buying groceries            Expenses:Food:Groceries   80.58 USD
+2022-05-07 Kin Soy | Eating out after work                 Expenses:Food:Restaurant  29.90 USD
+2022-05-04 Kin Soy | Eating out                            Expenses:Food:Restaurant  24.15 USD
+2022-05-01 Goba Goba | Eating out alone                    Expenses:Food:Restaurant  18.86 USD
+2022-04-29 Kin Soy | Eating out with Bill                  Expenses:Food:Restaurant  22.18 USD
+2022-04-28 Kin Soy | Eating out with Bill                  Expenses:Food:Restaurant  50.05 USD
+2022-04-25 Kin Soy | Eating out with Natasha               Expenses:Food:Restaurant  26.38 USD
+2022-04-23 Good Moods Market | Buying groceries            Expenses:Food:Groceries   64.31 USD
+2022-04-21 Kin Soy | Eating out with Joe                   Expenses:Food:Restaurant  35.86 USD
+2022-04-18 Kin Soy | Eating out with Bill                  Expenses:Food:Restaurant  21.61 USD
+2022-04-14 Jewel of Morroco | Eating out with Bill         Expenses:Food:Restaurant  32.14 USD
+2022-04-13 China Garden | Eating out with Natasha          Expenses:Food:Restaurant  41.67 USD
+2022-04-08 Kin Soy | Eating out with Joe                   Expenses:Food:Restaurant  13.75 USD
+2022-04-07 Onion Market | Buying groceries                 Expenses:Food:Groceries   90.44 USD
+2022-04-05 Chichipotle | Eating out with Joe               Expenses:Food:Restaurant  14.80 USD
+2022-04-02 Cafe Modagor | Eating out alone                 Expenses:Food:Restaurant  44.74 USD
+2022-03-30 China Garden | Eating out after work            Expenses:Food:Restaurant  35.72 USD
+2022-03-27 Onion Market | Buying groceries                 Expenses:Food:Groceries   80.43 USD
+2022-03-26 Chichipotle | Eating out with Bill              Expenses:Food:Restaurant  33.75 USD
+2022-03-24 China Garden | Eating out                       Expenses:Food:Restaurant  38.90 USD
+2022-03-20 Uncle Boons | Eating out with Natasha           Expenses:Food:Restaurant  14.85 USD
+2022-03-19 Rose Flower | Eating out with Joe               Expenses:Food:Restaurant  23.38 USD
+2022-03-18 Goba Goba | Eating out with Julie               Expenses:Food:Restaurant  20.36 USD
+2022-03-18 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries  103.05 USD
+2022-03-16 Kin Soy | Eating out after work                 Expenses:Food:Restaurant  21.37 USD
+2022-03-13 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries   72.57 USD
+2022-03-12 Rose Flower | Eating out with work buddies      Expenses:Food:Restaurant  24.20 USD
+2022-03-09 Cafe Modagor | Eating out with Bill             Expenses:Food:Restaurant  34.81 USD
+2022-03-07 Chichipotle | Eating out with Julie             Expenses:Food:Restaurant  47.65 USD
+2022-03-04 Onion Market | Buying groceries                 Expenses:Food:Groceries   78.48 USD
+2022-03-03 Chichipotle | Eating out alone                  Expenses:Food:Restaurant  27.75 USD
+2022-03-02 Rose Flower | Eating out after work             Expenses:Food:Restaurant  20.79 USD
+2022-02-28 Rose Flower | Eating out with Bill              Expenses:Food:Restaurant  31.03 USD
+2022-02-27 Cafe Modagor | Eating out after work            Expenses:Food:Restaurant  62.40 USD
+2022-02-26 Kin Soy | Eating out with Julie                 Expenses:Food:Restaurant  27.18 USD
+2022-02-24 Kin Soy | Eating out with Bill                  Expenses:Food:Restaurant   8.34 USD
+2022-02-22 Onion Market | Buying groceries                 Expenses:Food:Groceries  113.61 USD
+2022-02-19 Chichipotle | Eating out with Julie             Expenses:Food:Restaurant  22.23 USD
+2022-02-14 China Garden | Eating out with Joe              Expenses:Food:Restaurant  35.17 USD
+2022-02-13 Corner Deli | Buying groceries                  Expenses:Food:Groceries   91.15 USD
+2022-02-09 Cafe Modagor | Eating out                       Expenses:Food:Restaurant  23.17 USD
+2022-02-07 Chichipotle | Eating out with Joe               Expenses:Food:Restaurant  25.98 USD
+2022-02-05 Kin Soy | Eating out                            Expenses:Food:Restaurant  31.83 USD
+2022-02-03 China Garden | Eating out alone                 Expenses:Food:Restaurant  29.71 USD
+2022-02-02 Goba Goba | Eating out after work               Expenses:Food:Restaurant  23.37 USD
+2022-01-31 Bar Crudo                                       Expenses:Food:Restaurant  61.80 USD
+2022-01-30 Bar Crudo                                       Expenses:Food:Restaurant  80.90 USD
+2022-01-30 Waterbar                                        Expenses:Food:Restaurant  50.65 USD
+2022-01-30 Mission Chinese Food                            Expenses:Food:Restaurant  20.63 USD
+2022-01-27 Bar Crudo                                       Expenses:Food:Restaurant  59.65 USD
+2022-01-27 Starbucks                                       Expenses:Food:Coffee       6.13 USD
+2022-01-25 Bar Crudo                                       Expenses:Food:Restaurant  73.06 USD
+2022-01-25 Pizza Delfina                                   Expenses:Food:Restaurant  20.78 USD
+2022-01-24 Waterbar                                        Expenses:Food:Restaurant  54.92 USD
+2022-01-24 Mission Chinese Food                            Expenses:Food:Restaurant  29.60 USD
+2022-01-23 Bar Crudo                                       Expenses:Food:Restaurant  64.98 USD
+2022-01-23 Pizza Delfina                                   Expenses:Food:Restaurant  18.75 USD
+2022-01-23 Starbucks                                       Expenses:Food:Coffee       5.71 USD
+2022-01-22 Waterbar                                        Expenses:Food:Restaurant  58.72 USD
+2022-01-18 Jewel of Morroco | Eating out with Bill         Expenses:Food:Restaurant  60.49 USD
+2022-01-14 Cafe Modagor | Eating out with Bill             Expenses:Food:Restaurant  25.43 USD
+2022-01-10 Cafe Modagor | Eating out with Bill             Expenses:Food:Restaurant  45.15 USD
+2022-01-08 Onion Market | Buying groceries                 Expenses:Food:Groceries   75.91 USD
+2022-01-07 Kin Soy | Eating out with Bill                  Expenses:Food:Restaurant  20.96 USD
+2022-01-02 Goba Goba | Eating out with work buddies        Expenses:Food:Restaurant  31.83 USD
+2022-01-02 Farmer Fresh | Buying groceries                 Expenses:Food:Groceries   85.84 USD
+
+"
+`;
+
+exports[`query should list all traffic cost last month 1`] = `
+"   date                  description                        account          position 
+---------- ---------------------------------------- ----------------------- ----------
+2023-05-08 Metro Transport Authority | Tram tickets Expenses:Transport:Tram 120.00 USD
+
+"
+`;
