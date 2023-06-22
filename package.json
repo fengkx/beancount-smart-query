@@ -4,6 +4,7 @@
   "description": "beancount smart query",
   "author": "fengkx",
   "type": "module",
+  "packageManager": "pnpm@8.6.3",
   "bin": {
     "bean-sq": "./bin/run.js"
   },
