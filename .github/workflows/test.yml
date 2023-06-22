@@ -36,5 +36,5 @@ jobs:
         run: pnpm install
       - name: Run linter
         run: pnpm lint
-      # - name: Run Test
-      #   run: pnpm test
+      - name: Run Test
+        run: pnpm test
