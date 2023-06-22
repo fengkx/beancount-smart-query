@@ -1,5 +1,7 @@
 # Beancount smart query
 
+[![tests](https://github.com/fengkx/beancount-smart-query/actions/workflows/test.yml/badge.svg)](https://github.com/fengkx/beancount-smart-query/actions/workflows/test.yml)
+
 Query beancount in human language with the help of AI.
 
 ## Usage
