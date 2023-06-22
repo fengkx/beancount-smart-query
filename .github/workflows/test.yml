@@ -34,6 +34,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+      - name: Install beancount
+        run: sudo -H python3 -m pip install beancount
       - name: Run linter
         run: pnpm lint
       - name: Run Test
