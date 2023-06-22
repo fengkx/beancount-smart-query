@@ -6,6 +6,8 @@
     "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
     "outDir": "dist",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
     "rootDir": "src",
     "strict": true,
     "target": "es2019",
