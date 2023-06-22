@@ -20,8 +20,8 @@
   ],
   "dependencies": {
     "@oclif/core": "^2.8.7",
+    "@oclif/plugin-autocomplete": "^2.3.0",
     "@oclif/plugin-help": "^5.2.10",
-    "@oclif/plugin-plugins": "^2.4.7",
     "common-tags": "^1.8.2",
     "compose-regexp": "^0.7.1",
     "dotenv": "^16.3.1",
@@ -54,8 +54,7 @@
     "dirname": "bean-sq",
     "commands": "./dist/commands",
     "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
+      "@oclif/plugin-help"
     ],
     "topicSeparator": " ",
     "topics": {
