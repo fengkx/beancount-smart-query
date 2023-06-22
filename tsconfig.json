@@ -2,6 +2,7 @@
   "compilerOptions": {
     "composite": true,
     "declaration": true,
+    "noEmit": false,
     "importHelpers": true,
     "module": "ES2022",
     "moduleResolution": "nodenext",
@@ -20,6 +21,5 @@
     "esm": true,
     "files": true
   },
-  "files": ["tests/setup.d.ts"],
   "include": ["src/**/*"]
 }
