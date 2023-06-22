@@ -8,7 +8,7 @@ jobs:
   unit-tests:
     strategy:
       matrix:
-        # os: ["ubuntu-latest", "windows-latest"]
+        # os: ["ubuntu-latest", "windows-latest"] #window will failed in test https://github.com/google/zx/issues/482#issuecomment-1475750034
         os: ["ubuntu-latest", "macos-latest"]
         node_version: [lts/-1, lts/*, latest]
       fail-fast: false
