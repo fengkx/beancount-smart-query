@@ -49,7 +49,7 @@ export class AIQueryBuilder  {
       给出上个两个月的收入
       `),
       AIMessagePromptTemplate.fromTemplate(codeBlock`
-      为了列出上两个月的收入你可以这样：
+      为了列出上两个月的收入，一个月约 30 天，你可以这样列出最近 60 天的收入：
       \`\`\`
       ${oneLine`SELECT account, sum(convert(position, 'CNY')) as total, year, month WHERE account ~ "^Income:*" and date > date_add(today(), -60) GROUP BY account,year, month ORDER BY total DESC`}
       \`\`\`
@@ -143,6 +143,7 @@ export class QueryResult {
       const retryResult = await this.beanQuery!.queryAsString(correctedQuery)
       retryResult.map(stdout => {
         this.execSuccessHandler(stdout)
+        return Ok.EMPTY
       }).mapErr(err => {
         if (!this.options?.verbose) {
           this.cmd!.logToStderr(`${correctedQuery}\n${err.message}`)

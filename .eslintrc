@@ -1,6 +1,7 @@
 {
   "extends": ["oclif", "oclif-typescript"],
   "rules": {
+    "max-params": ["error", { "max": 6 }],
     "node/no-missing-import": "off",
     "no-useless-constructor": "off",
     "new-cap": "off"

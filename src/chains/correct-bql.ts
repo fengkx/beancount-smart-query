@@ -4,6 +4,7 @@ import {initializeAgentExecutorWithOptions} from 'langchain/agents'
 import {BeanQuery, BeanQueryOptions} from '../beancount/query.js'
 import {autoInjectable, inject} from 'tsyringe'
 import {codeBlock, oneLine} from 'common-tags'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {BQL_COLUMNS, BQL_FUNCTIONS, BQL_SYNTAX} from './prompts/bql.js'
 import {cliOptionsToken, openAIKeyToken} from '../ioc/tokens.js'
 import {ChatOpenAI} from 'langchain/chat_models/openai'
