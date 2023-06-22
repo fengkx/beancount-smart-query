@@ -23,6 +23,7 @@
     "@oclif/plugin-plugins": "^2.4.7",
     "common-tags": "^1.8.2",
     "compose-regexp": "^0.7.1",
+    "dotenv": "^16.3.1",
     "langchain": "^0.0.96",
     "reflect-metadata": "^0.1.13",
     "ts-results-es": "^3.6.0",

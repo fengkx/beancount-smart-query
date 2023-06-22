@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import 'reflect-metadata'
+import 'dotenv/config'
 
 import oclif from '@oclif/core'
 
