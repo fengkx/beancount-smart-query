@@ -1,3 +1,4 @@
+import 'reflect-metadata'
 import {container, instanceCachingFactory} from 'tsyringe'
 import {Command, Flags, Args} from '@oclif/core'
 import {beanEntryPathToken, cliOptionsToken, commandToken, openAIKeyToken} from '../ioc/tokens.js'
