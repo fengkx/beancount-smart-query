@@ -43,16 +43,16 @@ export class BQLSyntaxCorrecter {
       //   ${BQL_FUNCTIONS}
       //   `,
       // }),
-      new DynamicTool({name: 'Common Error Explainer', description: 'Run this to give explain for common error message. input should be error message', func: async (errMsg:string) => {
+      new DynamicTool({name: 'Common Error Explainer', description: 'Run this to give explanation for common error message. input should be error message', func: async (errMsg:string) => {
         const model = createOpenAI({temperature: 0, openAIApiKey})
         const resp = await model.call(codeBlock`
-        Explain Common Errors
+        Explanation Common Errors
         Error: Invalid number of arguments for DateAdd: found 3 expected 2.
-        Explain: function DateAdd only accept 2 arguments
+        Explanation: function DateAdd only accept 2 arguments
         Error: Syntax error near '-1' (at 139)
-        Explain: There is a Syntax Error near the 139th character which is '-1. Beancount query does NOT support any INTERVAL operator'
+        Explanation: There is a Syntax Error near the 139th character which is '-1. Beancount query does NOT support any INTERVAL operator'
         Error: ${errMsg}
-        Explain:
+        Explanation:
         `)
         return resp
       }}),
@@ -75,7 +75,6 @@ export class BQLSyntaxCorrecter {
     Query: ${oneLine`${query}`}
     Error: ${oneLine`${errMsg}`}
     `
-    console.log(input)
 
     const resp = await executor.call({input})
     return resp.output
