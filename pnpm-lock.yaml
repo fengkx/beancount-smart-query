@@ -54,8 +54,8 @@ dependencies:
 
 devDependencies:
   '@oclif/test':
-    specifier: ^2.3.23
-    version: 2.3.23(@types/node@16.18.39)(typescript@4.9.5)
+    specifier: ^2.4.0
+    version: 2.4.0(@types/node@16.18.39)(typescript@4.9.5)
   '@types/chai':
     specifier: ^4.3.5
     version: 4.3.5
@@ -1023,12 +1023,12 @@ packages:
       - typescript
     dev: true
 
-  /@oclif/test@2.3.23(@types/node@16.18.39)(typescript@4.9.5):
-    resolution: {integrity: sha512-SEbVaE6KxA6+pwDdgcogy2CLu+GdR0p5yAbIFN0LeakeQvdjaUGdaz0vX/VN7+QaKr08jmjhHO5VpF2iaRuVZg==}
+  /@oclif/test@2.4.0(@types/node@16.18.39)(typescript@4.9.5):
+    resolution: {integrity: sha512-eC99f81IdAzJdRtOAH5x28vfTk4Nbuqe9nySq6Y8z8MwA6zkDbJFWNj/Zz5LdBGabtsbuTXBku8U+evFrYMTcw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@oclif/core': 2.9.4(@types/node@16.18.39)(typescript@4.9.5)
-      fancy-test: 2.0.27
+      fancy-test: 2.0.32
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -3035,8 +3035,8 @@ packages:
       tmp: 0.0.33
     dev: true
 
-  /fancy-test@2.0.27:
-    resolution: {integrity: sha512-NUhkIpeHc4ebvkGLhQmlwpd9hd/ytOXTEmX2dFJ0e5VL61Ds7/RUHUmdSRY27VWil+uAuWSU8q6mUymrkxHC8Q==}
+  /fancy-test@2.0.32:
+    resolution: {integrity: sha512-yN40FulpMlEDVp/3YbSxVzkdUR/u0ZAk2Wu30vVvv79Dni0LoSz90ZXtLsp6e813ED0SHkaW/zfgDEp8YqF9Lw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@types/chai': 4.3.5
@@ -3045,7 +3045,7 @@ packages:
       '@types/sinon': 10.0.15
       lodash: 4.17.21
       mock-stdin: 1.0.0
-      nock: 13.3.1
+      nock: 13.3.2
       stdout-stderr: 0.1.13
     transitivePeerDependencies:
       - supports-color
@@ -5002,8 +5002,8 @@ packages:
   /nice-try@1.0.5:
     resolution: {integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==}
 
-  /nock@13.3.1:
-    resolution: {integrity: sha512-vHnopocZuI93p2ccivFyGuUfzjq2fxNyNurp7816mlT5V5HF4SzXu8lvLrVzBbNqzs+ODooZ6OksuSUNM7Njkw==}
+  /nock@13.3.2:
+    resolution: {integrity: sha512-CwbljitiWJhF1gL83NbanhoKs1l23TDlRioNraPTZrzZIEooPemrHRj5m0FZCPkB1ecdYCSWWGcHysJgX/ngnQ==}
     engines: {node: '>= 10.13'}
     dependencies:
       debug: 4.3.4(supports-color@8.1.1)
