@@ -35,7 +35,7 @@
     "zx": "^7.2.3"
   },
   "devDependencies": {
-    "@oclif/test": "^2.3.23",
+    "@oclif/test": "^2.4.7",
     "@types/chai": "^4.3.5",
     "@types/common-tags": "^1.8.1",
     "@types/mocha": "^9.1.1",
