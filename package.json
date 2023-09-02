@@ -21,7 +21,7 @@
   "dependencies": {
     "@oclif/core": "^2.9.4",
     "@oclif/plugin-autocomplete": "^2.3.0",
-    "@oclif/plugin-help": "^5.2.11",
+    "@oclif/plugin-help": "^5.2.19",
     "common-tags": "^1.8.2",
     "compose-regexp": "^0.7.1",
     "defu": "^6.1.2",
